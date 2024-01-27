@@ -1,4 +1,11 @@
 /*global*/
+:root{
+    --primary:rgb(182, 92, 19);
+    --secondary:rgb(16, 139, 16);
+}
+html{
+    font-size: 62.5%;/* 10px = 1rem*/ 
+}
 *{
     margin:0;
     padding:0;
@@ -13,13 +20,22 @@ a{
 img{
     max-width: 100%;
 }
+h2{
+    text-align: center;
+    margin:1rem 0;
+    font-size: 2.4rem;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
 /*utilities*/
 .flex-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 10rem;
 }
 .flex-header-v{
     display: flex;
@@ -32,6 +48,14 @@ img{
     width:80%;
     margin:0 auto;
 }
+.btn{
+    display: block;
+    font-size: 16px;
+    background-color: var(--primary);
+    padding: 1rem;
+    text-align: center;
+    margin:1rem 0;
+}
 /*header*/
 .site-init{
     background-image: url(img/header.jpg);
@@ -40,10 +64,14 @@ img{
     color:white;
 }
 .menu a{
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 .site-init p{
-    font-size: 20px;
+    font-size: 2rem;
+}
+.site-second{
+    background-color: #222222;
+    color:white;
 }
 /*about us*/
 .flex-about{
@@ -55,9 +83,37 @@ img{
 /*house item*/ 
 .house-item{
     background-color: #dedede;
-    width:400px;
+    width:40rem;
 }
 .price{
-    color:green;
+    color:var(--secondary);
     font-weight: bold;
+}
+
+/*contact form*/
+.form-container{
+
+}
+fieldset{
+    padding: 1rem;
+}
+legend,label,input{
+    font-size: 1.6rem;
+}
+.input-container{
+    margin:1rem;
+}
+.input-container input,
+.input-container textarea{
+    width:70%;
+    background-color: #dedede;
+    border:none;
+    padding:.5rem;
+    border-radius: 1rem;
+}
+.input-container label{
+    display: inline-block;
+    width:10rem;
+    text-align: right;
+    margin-right:1rem;
 }
